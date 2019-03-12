@@ -1,0 +1,14 @@
+[[annotation]]
+file="/data/db/human/1kg/ALL.wgs.phase3_shapeit2_mvncall_integrated_v5b.20130502.sites.norm.vcf.gz"
+# ID and FILTER are special fields that pull the ID and FILTER columns from the VCF
+fields = ["EAS_AF", "EUR_AF", "AFR_AF", "AMR_AF", "SAS_AF"]
+ops=["self", "self", "self", "self", "self"]
+names=["kGPhase3.EAS_AF", "kGPhase3.EUR_AF", "kGPhase3.AFR_AF", "kGPhase3.AMR_AF", "kGPhase3.SAS_AF"]
+
+[[annotation]]
+file="/data/db/human/ExAC/ExAC.r0.3.sites.vep.norm.vcf.gz"
+#ID and FILTER are special fields that pull the ID and FILTER columns from the VCF
+fields = ["AC_AFR", "AC_AMR", "AC_EAS", "AC_FIN", "AC_NFE", "AC_OTH", "AC_SAS", "AN_AFR", "AN_AMR", "AN_EAS", "AN_FIN", "AN_NFE", "AN_OTH", "AN_SAS"]
+ops=["self", "self", "self", "self", "self", "self", "self", "max", "max", "max", "max", "max", "max", "max"]
+names=["exac.AC_AFR", "exac.AC_AMR", "exac.AC_EAS", "exac.AC_FIN", "exac.AC_NFE", "exac.AC_OTH", "exac.AC_SAS", "exac.AN_AFR", "exac.AN_AMR", "exac.AN_EAS", "exac.AN_FIN", "exac.AN_NFE", "exac.AN_OTH", "exac.AN_SAS"]
+
